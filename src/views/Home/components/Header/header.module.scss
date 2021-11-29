@@ -4,6 +4,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
+padding: 100px 0;
 margin-bottom: 100px;
 }
 
@@ -13,7 +14,7 @@ margin-bottom: 100px;
     color: #626262;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 100px;
     list-style: none;
     li{
         margin: 10px 0;

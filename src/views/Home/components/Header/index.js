@@ -7,7 +7,7 @@ function Header() {
     <div className={header.container}>
       <ul className={header.nav}>
         <li>INTRO</li>
-        <li>ABOUTE</li>
+        <li>ABOUT</li>
         <li>FEATURED</li>
       </ul>
       <h3 className={header.title}>ART OBJECTS</h3>
