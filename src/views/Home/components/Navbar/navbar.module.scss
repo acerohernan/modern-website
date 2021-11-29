@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        font-family: "Syncopate", sans-serif;
+        font-size: 26px;   
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #434343;
+    }
+}
