@@ -15,8 +15,11 @@ function Gallery() {
     index,
     updateActiveImage,
   }) => {
+    console.log("src", src);
+
     return (
       <div className={gallery.itemWrapper}>
+        <div></div>
         <div className={gallery.item}>
           <div className={gallery.itemInfo}>
             <h1 className={gallery.itemTitle}>{title}</h1>
@@ -28,13 +31,14 @@ function Gallery() {
             style={{ backgroundImage: `url(${src})` }}
           ></div>
         </div>
+        <div></div>
       </div>
     );
   };
 
   return (
     <section className={gallery.container}>
-      <div clasName={gallery.wraper}>
+      <div className={gallery.wrapper}>
         <div className={gallery.counter}>
           <span>{activeImage}</span>
           <span className={gallery.divider}></span>

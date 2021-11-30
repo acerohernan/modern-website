@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Featured from "./components/Featured";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 import home from "./home.module.scss";
 
@@ -16,6 +17,7 @@ function Home() {
       <Featured />
       <About />
       <Gallery />
+      <Footer />
     </div>
   );
 }
