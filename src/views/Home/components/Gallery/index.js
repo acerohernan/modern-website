@@ -15,8 +15,6 @@ function Gallery() {
     index,
     updateActiveImage,
   }) => {
-    console.log("src", src);
-
     return (
       <div className={gallery.itemWrapper}>
         <div></div>
