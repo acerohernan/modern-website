@@ -8,11 +8,13 @@ import "./styles/reset.css";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route element={<Home />} exact path="/" />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route element={<Home />} exact path="/" />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
