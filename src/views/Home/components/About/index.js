@@ -4,7 +4,6 @@ import SplitText from "../../../../utils/Split3.min.js";
 import useOnScreen from "../../../../hooks/useOnScreen";
 import gsap from "gsap";
 import about from "./about.module.scss";
-import "./about-animation.scss";
 
 function About() {
   const [reveal, setReveal] = useState(false);
@@ -12,25 +11,24 @@ function About() {
   const onScreen = useOnScreen(ref);
 
   useEffect(() => {
-    if (onScreen) {
-      setReveal(onScreen);
-    }
+    if (onScreen) setReveal(onScreen);
   }, [onScreen]);
 
-  /*   useEffect(() => {
+  /*  useEffect(() => {
     const split = new SplitText("#about-text", {
       type: "lines",
-      linesClass: "LineChildren",
+    });
+    const splitParent = new SplitText("#about-text", {
+      type: "lines",
     });
 
     gsap.to(split.lines, {
       duration: 1,
-      y: -20,
-      opacity: 1,
+      y: 0,
       stagger: 0.1,
       ease: "power2",
     });
-  }, []); */
+  }, [reveal]); */
 
   return (
     <section className={about.container} data-scroll-section>

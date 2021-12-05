@@ -1,5 +1,6 @@
 .container{
     padding: 100px 0 200px;
+    opacity: 0;
 }
 
 .title{
@@ -17,5 +18,10 @@
     text-align: center;
     text-transform: uppercase;
     font-family: "Bodoni Moda", sans-serif;
+    opacity: 0;
 }
 
+.isReveal{
+ opacity: 1;
+ transition: 1s ease all;
+}
