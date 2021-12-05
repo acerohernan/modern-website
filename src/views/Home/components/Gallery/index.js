@@ -35,7 +35,7 @@ function Gallery() {
   };
 
   return (
-    <section className={gallery.container}>
+    <section className={gallery.container} data-scroll-section>
       <div className={gallery.wrapper}>
         <div className={gallery.counter}>
           <span>{activeImage}</span>

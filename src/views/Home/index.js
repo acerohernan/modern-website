@@ -9,15 +9,15 @@ import Footer from "./components/Footer";
 
 import Loader from "../../components/Loader";
 import home from "./home.module.scss";
+import useLocoScroll from "../../hooks/useLocoScroll";
 
 function Home() {
   const [preloader, setPreloader] = useState(true);
 
+  useLocoScroll(!preloader);
   const [timer, setTimer] = useState(3);
 
   const id = useRef(null);
-
-  console.log("id", id);
 
   const clear = () => {
     window.clearInterval(id.current);
@@ -38,15 +38,22 @@ function Home() {
 
   return (
     <>
-      {preloader && <Loader />}
-      <div className={home.container}>
-        <Navbar />
-        <Header />
-        <Featured />
-        <About />
-        <Gallery />
-        <Footer />
-      </div>
+      {preloader ? (
+        <Loader />
+      ) : (
+        <div
+          className={home.container}
+          data-scroll-container
+          id="main-container"
+        >
+          <Navbar />
+          <Header />
+          <Featured />
+          <About />
+          <Gallery />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
